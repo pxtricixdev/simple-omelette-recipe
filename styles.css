@@ -1,0 +1,123 @@
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --wengebrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+body {
+    margin: 0px;
+    background-color: var(--eggshell);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+img {
+    max-width: 530px;
+    border-radius: 10px;
+}
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    margin: 0;
+}
+h1 {
+    color: var(--darkCharcoal);
+}
+h2 {
+    color: var(--nutmeg);
+}
+p, li, span {
+    font-family: "Outfit", sans-serif;
+    color: var(--wengebrown);
+    font-size: 13px;
+}
+li {
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+.container {
+    background-color: var(--white);
+    max-width: 530px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.preparation {
+    background-color: var(--roseWhite);
+    padding: 15px 15px 5px 15px;
+    border-radius: 10px;
+    color: var(--wengebrown);
+}
+.preparation p {
+    margin: 0;
+    color: var(--darkRaspberry);
+    font-weight: 700;
+    font-size: 15px;
+}
+.preparation ul, .ingredients ul {
+    list-style-type: none; 
+    padding-left: 5px;
+}
+  
+.preparation li::before, .ingredients li::before {
+    content: "\2022"; 
+    color: var(--darkRaspberry); 
+    margin-right: 18px;
+}
+  
+.ingredients, .instructions {
+    border-bottom: 1px solid var(--eggshell);
+}
+.ingredients, .instructions, .nutrition {
+    margin-top: 20px;
+}
+.instructions ol {
+    padding-left: 20px;
+}
+.instructions li {
+    padding-left: 10px;
+}
+.instructions li::marker {
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+.nutrition span {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+}
+.nutrition p {
+    margin: 10px 0;
+}
+.calories, .carbs, .protein {
+    border-bottom: 1px solid var(--eggshell);
+}
+.gr {
+    color: var(--nutmeg);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 600px) {
+    .container, img {
+        max-width: 100%;
+    }
+    img {
+        border-radius: 0;
+    }
+    .container {
+        padding: 0;
+        border-radius: 0
+    }
+
+}
