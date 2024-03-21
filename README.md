@@ -19,8 +19,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Here]()
-- Live Site URL: [Here]()
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/simple-omelette-recipe-suf1hKym1g)
+- Live Site URL: [Here](https://pxtricixdev.github.io/simple-omelette-recipe/)
 
 ## Author
 - Frontend Mentor - [@pxtricixdev](https://www.frontendmentor.io/profile/pxtricixdev)
